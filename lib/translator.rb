@@ -5,7 +5,13 @@ require "pry"
 def load_library (file)
   # code goes here
   emoticons = YAML.load_file('./lib/emoticons.yml')
-
+emo = {}
+  emoticons.each do |name,arrays|
+      emo[name] ||= {}
+      emo[name][:english] = arrays[0]
+      emo[name][:japanese] = arrays[1]
+  end
+emo
 end
       
 # def get_japanese_emoticon (file, eng_emoticons)
