@@ -14,41 +14,6 @@ emo = {}
 emo
 end
       
-# def get_japanese_emoticon (file, eng_emoticons)
-#   # code goes here
-#   library =  load_library ('./lib/emoticons.yml')
-#   library.each do |meaning, symbol|
-#     return symbol[:japanese] if
-#     symbol[:english] == eng_emoticons
-#   end
-#   "Sorry, that emoticon was not found"
-# end
-
-# def get_english_meaning (file, jap_emoticons)
-#   # code goes here
-# library =  load_library ('./lib/emoticons.yml')
-# library.each do |meaning, symbol|
-#   return meaning if
-#   symbol[:japanese] == jap_emoticons
-# end
-# "Sorry, that emoticon was not found"
-# end
-
-
-
-
-# def load_library(file_path)
-#   #binding.pry
-#   emoticons = YAML.load_file('./lib/emoticons.yml')
-# return_hash ={"get_meaning" => {},
-#     "get_emoticon" => {},
-#   }
-# emoticons.each do |meaning,icon|
-#     return_hash["get_meaning"][icon[1]] = meaning
-#     return_hash["get_emoticon"][icon[0]] = icon[1]
-#   end
-#   return_hash
-# end
 
 def get_japanese_emoticon(file_path, emoticon)
   emoticons = load_library(file_path)
